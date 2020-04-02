@@ -19,7 +19,13 @@ aside {
 	color:#fff;
 }
 
+.sociales{
+	margin-top: 0.5%;
+}
+
 footer {
+	padding-top: 1%;
+	padding-bottom: 0.3%; 
 	margin-top: 1%;
 	background: #FF0000;
 	color:#fff;
