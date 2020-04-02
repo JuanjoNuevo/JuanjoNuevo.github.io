@@ -1,0 +1,23 @@
+<style>
+	.container{
+		display: flex;
+	}
+	.container > div {
+		background-color: black;
+		font-size: 2vw;
+		padding: .5em;
+		color: white;
+	}
+	.red {
+		background-color: red;
+		flex-grow: 1;
+	}
+	.green {
+		background-color: green;
+	}
+	.blue {
+		background-color: blue;
+		background: steelblue;
+		width: 40vw;
+	}
+</style>

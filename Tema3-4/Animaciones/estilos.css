@@ -1,0 +1,65 @@
+<style>
+	.parrafo{
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+	#ejercicio1 {
+		background-color: white;
+		width: 300px;
+		margin: 25px;
+		padding: 25px;
+		border: 25px solid green;
+	}
+	b {
+		font-size: 200%;
+		margin-left: 10px;
+	}
+	#box {
+		background-color: #f4ff81;
+		color: #ffab00;
+		font-size: 18px;
+		width: 300px;
+		margin: 25px;
+		padding: 25px;
+		border: 10px solid green;
+	}
+	#titulo {
+		background-color: #f4ff81;
+		color: #e65100;
+		font-size: 18px;		
+	}
+	#link2 {
+		background-color: #f4ff81;
+		color: #e65100;
+		font-size: 18px;
+	}
+	#link2:hover{
+		background-color: #dd2c00;
+		color: #e65100;
+		font-size: 18px;		
+	}
+	
+	#gradientes{
+		text-align: center;
+		font-size: 5vw;
+		padding: 10vw;
+		border: solid;
+		background: repeating-radial-gradient(grey 20%, white 40%);		
+	}
+	
+	.zoomIt{
+		display:block!important;
+		-webkit-transition:-webkit-transform 0s ease-out;
+		-moz-transition:-moz-transform 0s ease-out;
+		-o-transition:-o-transform 0s ease-out;
+		-ms-transition:-ms-transform 0s ease-out;
+		transition:transform 0s ease-out;
+	}
+	.zoomIt:hover{
+		-moz-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		transform: scale(1.5)
+	}
+</style>

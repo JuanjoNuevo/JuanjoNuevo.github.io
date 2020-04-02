@@ -1,0 +1,20 @@
+<style>
+	body{
+		width: 500px;
+		margin: 0 auto;
+	}
+	p{
+		background-color: aqua;
+		border: 3px solid blue;
+		margin: 10px auto;
+		padding: 10px auto;
+	}
+	.nuevo{
+		position: fixed;
+		top: 5px; right: 5px;
+		width: 90px;
+		background-color: yellow;
+		margin: 10px;
+		padding: 15px;
+	}
+</style>

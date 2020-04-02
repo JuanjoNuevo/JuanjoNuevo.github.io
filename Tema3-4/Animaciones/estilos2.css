@@ -1,0 +1,22 @@
+<style>
+	.titulo{
+		font-weight: bold;
+		font-size: 200px;		
+	}
+	.parrafo{
+		font-weight: normal;
+		margin-top: 25px;
+		margin-left: 10px;
+	}
+	section {
+		background-color: white;
+		width: 300px;
+		margin: 25px;
+		padding: 25px;
+		border: 25px solid green;
+	}
+	b {
+		font-size: 200%;
+		margin-left: 10px;
+	}
+</style>

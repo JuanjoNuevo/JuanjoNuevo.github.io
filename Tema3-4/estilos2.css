@@ -1,0 +1,32 @@
+<style>
+	body {
+		width: 500px;
+		margin: 0 auto;
+	}
+	h1 {
+		top: 0;
+	}
+	p:nth-of-type(2){ 
+		background-color: aqua;
+		border: 3px solid blue;
+		margin: 10px auto;
+	}
+	.posicionamiento{
+		position: fixed;
+		bottom: 5px; right: 5px;
+		width: 100px;
+		margin: 10px;
+		background-color: rgba(255,84,104,.3);
+		border: 2px solid rgb(255,84,104);
+		border-radius: 5px;
+	}
+	.posicionamiento2{
+		position: relative;
+		top: 30 px; left: 30px;
+		width: 100px;
+		margin: 10px;
+		background-color: rgba(255,84,104,.3);
+		border: 2px solid rgb(255,84,104);
+		border-radius: 5px;
+	}
+</style>
