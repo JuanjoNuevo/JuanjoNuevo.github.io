@@ -1,74 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss>
-  <channel>
-<title>Ejercicios Juan José Gil Luna</title>
-<link>https://juanjonuevo.github.io/</link>
-<description>Ejercicio LMS</description>
-
-<item>
-<title>Pagina web</title>
-<link>
-https://juanjonuevo.github.io/marcas.html
-</link>
-</item>
-
-<item>
-<title>Cordoba patrimonio</title>
-<link>
-https://juanjonuevo.github.io/CordobaPatrimonio/index.html
-</link>
-</item>
-
-<item>
-<title>Recetas</title>
-<link>
-https://juanjonuevo.github.io/Recetas-Abuela/index.html
-</link>
-</item>
-
-<item>
-<title>Tema 1</title>
-<link>
-https://juanjonuevo.github.io/tema1.html
-</link>
-</item>
-
-<item>
-<title>Tema 2</title>
-<link>
-https://juanjonuevo.github.io/tema2.html
-</link>
-</item>
-
-<item>
-<title>Tema 3,4,5</title>
-<link>
-https://juanjonuevo.github.io/tema3.html
-</link>
-</item>
-
-<item>
-<title>Tema 6,7</title>
-<link>
-https://juanjonuevo.github.io/tema4.html
-</link>
-</item>
-
-<item>
-<title>Odoo</title>
-<link>
-https://juanjonuevo.github.io/odoo.html
-</link>
-</item>
-
-<item>
-<title>Tema Git</title>
-<link>
-https://juanjonuevo.github.io/git/git.html
-</link>
-</item>
-
-</channel>
+	<channel>
+		<title>Ejercicios Juan José Gil Luna 1º Cordoba Patrimonio</title>
+		<link>https://juanjonuevo.github.io/</link>
+		<description>Ejercicio LMS</description>
+		<item>
+			<title>Cordoba patrimonio</title>
+			<link>
+				https://juanjonuevo.github.io/CordobaPatrimonio/index.html
+			</link>
+		</item>
+	</channel>
+	<channel>
+		<title>Ejercicios Juan José Gil Luna 1º ASIR tema 1</title>
+		<link>https://juanjonuevo.github.io/</link>
+		<description>Ejercicio LMS</description>
+		<item>
+			<title>Tema 1</title>
+			<link>
+				https://juanjonuevo.github.io/tema1.html
+			</link>
+		</item>
+	</channel>
+	<channel>
+		<title>Ejercicios Juan José Gil Luna 1º ASIR tema 2</title>
+		<link>https://juanjonuevo.github.io/</link>
+		<description>Ejercicio LMS</description>
+		<item>
+			<title>Tema 2</title>
+			<link>
+				https://juanjonuevo.github.io/tema2.html
+			</link>
+		</item>
+	</channel>
+	<channel>
+		<title>Ejercicios Juan José Gil Luna 1º ASIR tema 3,4,5</title>
+		<link>https://juanjonuevo.github.io/</link>
+		<description>Ejercicio LMS</description>
+		<item>
+			<title>Tema 3,4,5</title>
+			<link>
+				https://juanjonuevo.github.io/tema3.html
+			</link>
+		</item>
+	</channel>
+	<channel>
+		<title>Ejercicios Juan José Gil Luna 1º ASIR tema 6,7</title>
+		<link>https://juanjonuevo.github.io/</link>
+		<description>Ejercicio LMS</description>
+		<item>
+			<title>Tema 6,7</title>
+			<link>
+				https://juanjonuevo.github.io/tema4.html
+			</link>
+		</item>
+	</channel>
+	<channel>
+		<title>Ejercicios Juan José Gil Luna 1º ASIR Pagina web</title>
+		<link>https://juanjonuevo.github.io/</link>
+		<description>Ejercicio LMS</description>
+		<item>
+			<title>Pagina web Github</title>
+			<link>
+				https://juanjonuevo.github.io/marcas.html
+			</link>
+		</item>
+	</channel>
+	<channel>
+		<title>Ejercicios Juan José Gil Luna 1º ASIR Recetas de la abuela</title>
+		<link>https://juanjonuevo.github.io/</link>
+		<description>Ejercicio LMS</description>
+		<item>
+			<title>Recetas de la abuela</title>
+			<link>
+				https://juanjonuevo.github.io/Recetas-Abuela/index.html
+			</link>
+		</item>
+	</channel>
+	<channel>
+		<title>Ejercicios Juan José Gil Luna 1º ASIR ODOO</title>
+		<link>https://juanjonuevo.github.io/</link>
+		<description>Ejercicio LMS</description>
+		<item>
+			<title>ODOO instalacion y ERPS</title>
+			<link>
+				https://juanjonuevo.github.io/odoo.html
+			</link>
+		</item>
+	</channel>
+	<channel>
+		<title>Ejercicios Juan José Gil Luna 1º ASIR GIT</title>
+		<link>https://juanjonuevo.github.io/</link>
+		<description>Ejercicio LMS</description>
+		<item>
+			<title>Tutorial de GIT</title>
+			<link>
+				https://juanjonuevo.github.io/git/git.html
+			</link>
+		</item>
+	</channel>
 </rss>
 
 
