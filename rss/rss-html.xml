@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss>
+  <channel>
+<title>Ejercicios Juan José Gil Luna</title>
+<link>https://juanjonuevo.github.io/</link>
+<description>Ejercicio LMS</description>
+
+<item>
+<title>Cordoba patrimonio</title>
+<link>
+https://juanjonuevo.github.io/CordobaPatrimonio/index.html
+</link>
+</item>
+
+<item>
+<title>Recetas</title>
+<link>
+https://juanjonuevo.github.io/Recetas-Abuela/index.html
+</link>
+</item>
+
+<item>
+<title>Tema 1</title>
+<link>
+https://juanjonuevo.github.io/tema1.html
+</link>
+</item>
+
+<item>
+<title>Tema 2</title>
+<link>
+https://juanjonuevo.github.io/tema2.html
+</link>
+</item>
+
+<item>
+<title>Tema 3,4,5</title>
+<link>
+https://juanjonuevo.github.io/tema3.html
+</link>
+</item>
+
+<item>
+<title>Tema 6,7</title>
+<link>
+https://juanjonuevo.github.io/tema4.html
+</link>
+</item>
+
+<item>
+<title>Odoo</title>
+<link>
+https://juanjonuevo.github.io/odoo.html
+</link>
+</item>
+
+<item>
+<title>Tema Git</title>
+<link>
+https://juanjonuevo.github.io/git/git.html
+</link>
+</item>
+
+</channel>
+</rss>
+
+
