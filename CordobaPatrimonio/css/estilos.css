@@ -1,28 +1,21 @@
-body {
-	width: 100%;
-	height: 100%;
-}
-
-#index{
-	width: 100%;
-	background-color: black;
-}
-
-#conserjeria, #cordoba, #patrimonio {
-	width: 20%;
-	height: 20%;
+html {
+    text-align: center;
 }
 
 #index_titulo {
-	background-color: green;
+    text-align: justify;
+    width: 50%;
+    margin-top: 50px;
 }
 
-#index_titulo #imagen_titulo #img_index{
-	width: 20%;
-	height: 20%;
+#titulo_monumentos {
+    text-align: left;
+    width: 50%;
+    margin-top: -130px;
+    margin-left: 60%;
 }
 
-footer {
-	background-color: black;
-	color: white;
+img {
+    width: 30%;
+    height: 30%;
 }
