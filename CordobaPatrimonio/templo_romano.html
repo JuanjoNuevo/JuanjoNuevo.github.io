@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Córdoba Patrimonio</title>
+		<meta charset="utf-8">
+		<link rel="icon" type="images/png" href="images/favicon.png" sizes="16x16">
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<link rel="stylesheet" type="text/css" href="css/carrusel.css">
+		
+		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+		<script>
+		var current = 0;
+		var imagenes = new Array();
+		 
+		$(document).ready(function() {
+			var numImages = 3;
+		 
+			$('.left-arrow').on('click',function() {
+				if (current > 0) {
+					current = current - 1;
+				} else {
+					current = numImages - 1;
+				}
+		 
+				$(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
+		 
+				return false;
+			});
+		 
+			$('.left-arrow').on('hover', function() {
+				$(this).css('opacity','0.5');
+			}, function() {
+				$(this).css('opacity','1');
+			});
+		 
+			$('.right-arrow').on('hover', function() {
+				$(this).css('opacity','0.5');
+			}, function() {
+				$(this).css('opacity','1');
+			});
+		 
+			$('.right-arrow').on('click', function() {
+				if (numImages > current + 1) {
+					current = current+1;
+				} else {
+					current = 0;
+				}
+		 
+				$(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
+		 
+				return false;
+			}); 
+		 });
+		</script>
+	</head>
+	
+	<body>
+		<header>
+			<h1>Templo Romano</h1>
+		</header>
+		
+		<nav>
+			<strong><a href="lista_monumentos.html">MONUMENTOS</a></strong>
+			<strong><a href="index.html">HISTORIA</a></strong>
+			<strong><a href="festividades.html">FESTIVIDADES</a></strong>
+		</nav>
+		<br>
+		<nav>
+			<strong><a href="tendillas.html">PLAZA DE LAS TENDILLAS</a></strong>
+			<strong><a href="templo_romano.html">TEMPLO ROMANO</a></strong>
+			<strong><a href="caballerizas.html">CABALLERIZAS REALES</a></strong>
+		</nav>
+		<nav>
+			<strong><a href="puente_romano.html">PUENTE ROMANO</a></strong>
+			<strong><a href="calahorra.html">TORRE DE LA CALAHORRA</a></strong>
+			<strong><a href="arco_del_triunfo.html">PUERTA DEL PUENTE</a></strong>
+		</nav>
+		<nav>
+			<strong><a href="arbolafia.html">MOLINO DE LA ALBOLAFIA</a></strong>
+			<strong><a href="mezquita.html">LA MEZQUITA-CATDERAL</a></strong>
+			<strong><a href="alcazar.html">ALCÁZAR DE LOS REYES CRISTIANOS</a></strong>
+		</nav>
+		
+		<main>
+			<a href="index.html">Volver a Inicio</a>
+			<section>
+				<div id="carrusel">
+					<a href="#" class="left-arrow"><img id="arrow" src="images/left_arrow.png" /></a>
+					<a href="#" class="right-arrow"><img id="arrow" src="images/rigth_arrow.png" /></a>
+					<div class="carrusel">
+						<div class="product" id="product_0">
+							<img src="images/templo1.jpg" width="100%" height="100%" />
+						</div>
+						<div class="product" id="product_1">
+							<img src="images/templo2.jpg" width="100%" height="100%" />
+						</div>
+						<div class="product" id="product_2">
+							<img src="images/templo3.jpg" width="100%" height="100%" />
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="Descripcion">
+				<p>Fue descubierto en los años 1950 durante la ampliación del ayuntamiento.
+				Es el único conocido por excavación arqueológica. Es un templo pseudopériptero, hexástilo y de orden corintio
+				de 32 metros de largo por 16 de ancho. El 20 de Mayo de 2007 el Consejo de Gobierno de la Junta de Andalucía
+				declara el conjunto Bien de InteRÉS Cultural. Su construcción comienza durante el reinado del emperador Claudio
+				y se terminó durante el reinado del emperador Domiciano, unos cuarenta años después.</p>
+			</section>
+		</main>
+		
+		<footer>
+			<h5>Lenguaje de marcas I.E.S. Gran Capitán <br> ©: Juan José Gil Luna, Todos los derechos reservados </br> Córdoba, España. 2020</h5>
+		</footer>
+	</body>
+</html>

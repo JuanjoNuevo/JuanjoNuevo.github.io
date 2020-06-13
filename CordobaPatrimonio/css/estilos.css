@@ -1,0 +1,28 @@
+body {
+	width: 100%;
+	height: 100%;
+}
+
+#index{
+	width: 100%;
+	background-color: black;
+}
+
+#conserjeria, #cordoba, #patrimonio {
+	width: 20%;
+	height: 20%;
+}
+
+#index_titulo {
+	background-color: green;
+}
+
+#index_titulo #imagen_titulo #img_index{
+	width: 20%;
+	height: 20%;
+}
+
+footer {
+	background-color: black;
+	color: white;
+}

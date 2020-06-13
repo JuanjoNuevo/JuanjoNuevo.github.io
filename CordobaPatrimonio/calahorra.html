@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Córdoba Patrimonio</title>
+		<meta charset="utf-8">
+		<link rel="icon" type="images/png" href="images/favicon.png" sizes="16x16">
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<link rel="stylesheet" type="text/css" href="css/carrusel.css">
+		
+		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+		<script>
+		var current = 0;
+		var imagenes = new Array();
+		 
+		$(document).ready(function() {
+			var numImages = 3;
+		 
+			$('.left-arrow').on('click',function() {
+				if (current > 0) {
+					current = current - 1;
+				} else {
+					current = numImages - 1;
+				}
+		 
+				$(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
+		 
+				return false;
+			});
+		 
+			$('.left-arrow').on('hover', function() {
+				$(this).css('opacity','0.5');
+			}, function() {
+				$(this).css('opacity','1');
+			});
+		 
+			$('.right-arrow').on('hover', function() {
+				$(this).css('opacity','0.5');
+			}, function() {
+				$(this).css('opacity','1');
+			});
+		 
+			$('.right-arrow').on('click', function() {
+				if (numImages > current + 1) {
+					current = current+1;
+				} else {
+					current = 0;
+				}
+		 
+				$(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
+		 
+				return false;
+			}); 
+		 });
+		</script>
+	</head>
+	
+	<body>
+		<header>
+			<h1>Torre de la Calahorra</h1>
+		</header>
+		
+		<nav>
+			<strong><a href="lista_monumentos.html">MONUMENTOS</a></strong>
+			<strong><a href="index.html">HISTORIA</a></strong>
+			<strong><a href="festividades.html">FESTIVIDADES</a></strong>
+		</nav>
+		<br>
+		<nav>
+			<strong><a href="tendillas.html">PLAZA DE LAS TENDILLAS</a></strong>
+			<strong><a href="templo_romano.html">TEMPLO ROMANO</a></strong>
+			<strong><a href="caballerizas.html">CABALLERIZAS REALES</a></strong>
+		</nav>
+		<nav>
+			<strong><a href="puente_romano.html">PUENTE ROMANO</a></strong>
+			<strong><a href="calahorra.html">TORRE DE LA CALAHORRA</a></strong>
+			<strong><a href="arco_del_triunfo.html">PUERTA DEL PUENTE</a></strong>
+		</nav>
+		<nav>
+			<strong><a href="arbolafia.html">MOLINO DE LA ALBOLAFIA</a></strong>
+			<strong><a href="mezquita.html">LA MEZQUITA-CATDERAL</a></strong>
+			<strong><a href="alcazar.html">ALCÁZAR DE LOS REYES CRISTIANOS</a></strong>
+		</nav>
+		
+		<main>
+			<a href="index.html">Volver a Inicio</a>
+			<section>
+				<img src="images/calahorra.jpg"/>
+			</section>
+			<section id="Descripcion">
+				<p>Es una fortaleza de origen islámico concebida como entrada y protección
+				del Puente Romano. Fue declarada junto al Puente Romano y la puerta del puente
+				Conjunto Histórico-Artístico en 1931, además de formar parte del centro histórico
+				de Córdoba declarado Patrimonio de la Humanidad por la Unesco en 1994. Alberga la sede del Museo Vivo
+				de al-Ándalus, inaugurado en 1987 y gestionado por la Fundación Paradigma Córdoba.
+				Las primeras noticias de esta torre nos llegan en 1236 con la conquista castellana de Córdoba
+				a manos del rey Fernando III, ya que dificultaba la invasión.</p>
+			</section>
+		</main>
+		
+		<footer>
+			<h5>Lenguaje de marcas I.E.S. Gran Capitán <br> ©: Juan José Gil Luna, Todos los derechos reservados </br> Córdoba, España. 2020</h5>
+		</footer>
+	</body>
+</html>

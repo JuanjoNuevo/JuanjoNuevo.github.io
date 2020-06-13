@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Córdoba Patrimonio</title>
+		<meta charset="utf-8">
+		<link rel="icon" type="images/png" href="images/favicon.png" sizes="16x16">
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<link rel="stylesheet" type="text/css" href="css/carrusel.css">
+		
+		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+		<script>
+		var current = 0;
+		var imagenes = new Array();
+		 
+		$(document).ready(function() {
+			var numImages = 3;
+		 
+			$('.left-arrow').on('click',function() {
+				if (current > 0) {
+					current = current - 1;
+				} else {
+					current = numImages - 1;
+				}
+		 
+				$(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 400);
+		 
+				return false;
+			});
+		 
+			$('.left-arrow').on('hover', function() {
+				$(this).css('opacity','0.5');
+			}, function() {
+				$(this).css('opacity','1');
+			});
+		 
+			$('.right-arrow').on('hover', function() {
+				$(this).css('opacity','0.5');
+			}, function() {
+				$(this).css('opacity','1');
+			});
+		 
+			$('.right-arrow').on('click', function() {
+				if (numImages > current + 1) {
+					current = current+1;
+				} else {
+					current = 0;
+				}
+		 
+				$(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 400);
+		 
+				return false;
+			}); 
+		 });
+		</script>
+	</head>
+	
+	<body>
+		<header>
+			<h1>Plaza de las Tendillas</h1>
+		</header>
+		
+		<nav>
+			<strong><a href="tendillas.html">PLAZA DE LAS TENDILLAS</a></strong>
+			<strong><a href="templo_romano.html">TEMPLO ROMANO</a></strong>
+			<strong><a href="caballerizas.html">CABALLERIZAS REALES</a></strong>
+		</nav>
+		<nav>
+			<strong><a href="puente_romano.html">PUENTE ROMANO</a></strong>
+			<strong><a href="calahorra.html">TORRE DE LA CALAHORRA</a></strong>
+			<strong><a href="arco_del_triunfo.html">PUERTA DEL PUENTE</a></strong>
+		</nav>
+		<nav>
+			<strong><a href="arbolafia.html">MOLINO DE LA ALBOLAFIA</a></strong>
+			<strong><a href="mezquita.html">LA MEZQUITA-CATDERAL</a></strong>
+			<strong><a href="alcazar.html">ALCÁZAR DE LOS REYES CRISTIANOS</a></strong>
+		</nav>
+		
+		<main>
+			<a href="index.html">Volver a Inicio</a>
+			<section>
+				<div id="carrusel">
+					<a href="#" class="left-arrow"><img id="arrow" src="images/left_arrow.png" /></a>
+					<a href="#" class="right-arrow"><img id="arrow" src="images/rigth_arrow.png" /></a>
+					<div class="carrusel">
+						<div class="product" id="product_0">
+							<img src="images/tendillas.jpg" width="100%" height="100%" />
+						</div>
+						<div class="product" id="product_1">
+							<img src="images/felix.jpg" width="100%" height="100%" />
+						</div>
+						<div class="product" id="product_2">
+							<img src="images/reloj.jpg" width="100%" height="100%" />
+						</div>
+					</div>
+				</div>
+			</section>
+		
+			<section id="Descripcion">
+				<p>Antiguamente, aquí encontrabamos las casas pertenecientes a la Orden de Calatrava y algunos
+				pequeños comercios. En el año 1860 se destruyerón las viviendas para construir el Hotel Suizo,
+				que posteriormente en 1923 también fue derruido. En 1925 las obras de la plaza terminan, dos años
+				más tarde, en 1927 se instala el Monumento de Gran Capitán, obra de Mateo Inurria. Por último, 
+				se reformó en 1999 siendo inaugurada el 13 de Mayo por el alcalde Rafael Merino.</p>
+				
+				<p>Además de la estatua de Gran Capitán, en esta plaza podemos encontrar otro monumentos relevantes
+				como son el <a>Reloj de las Tendillas</a>, <a>el Edificio de La Unión y el Fénix</a>, <a>el Instituto Luis de Góngora</a>,
+				<a>el Palacio Colomera</a> y <a>la Casa Enriquez Barrios</a>.</p>
+				
+				<h3>Reloj de las Tendillas</h3>
+				<p>La peculiaridad de este reloj es al dar las horas, y en vez de sonar campanas, toca los cuartos
+				y las horas con el sonido de una guitarra construida por Manuel Reyes Maldonado y tocada por el
+				guitarrista Juan Serrano a ritmo de <a>soleares</a>.</p>
+				
+				<h3>Edificio de la Unión y el Fénix</h3>
+				<p>Es obra del arquitecto Benjamín Gutiérrez Prieto, construido entre 1926 y 1927. Durante la Guerra
+				Civil albergó una de las sirenas que avisaban a la población de la llegada de bombardeos. Actualmente,
+				en su interior nos encontramos oficinas.</p>
+				
+				<h3>Instituto Luis de Góngora</h3>
+				<p>Es una de las instituciones más antiguas de Córdoba, En 2018 fue reconocido como Instituto Histórico de Andalucía.
+				Fue fundado por Pedro López de Alba, médico del rey Carlos V, aunque el colegio funcionaba desde el año 1569. El fin
+				de esta fundación fue el de acoger a estudiantes sin recursos que pensaban dedicarse al sacerdocio, siendo regisdos
+				desde sus inicios por padres jesuitas.</p>
+				
+				<h3>Palacio Colomera</h3>
+				<p>Es una antigua vivienda de cuatro plantas realizada por el arquitecto Félix Hernández Giménez en el año 1928
+				para los condes de Colomera. Tras un largo proceso de restauración para albergar un hotel de cuatro estrellas,
+				se encontró una noria medieval que da a un acuífero. Fue inaugurado el 7 de junio de 2019 como hotel  H10 Palacio Colomera.</p>
+				
+				<h3>Casa Enriquez Barrios</h3>
+				<p>Perteneció al alcalde cordobés Enriquez Barrios, tal como su nombre indica, siendo un ejemplo de regionalismo de los arquitectos Aníbal González y Aurelio Gómez Millán.</p>
+			</section>
+		</main>
+		
+		<footer>
+			<h5>Lenguaje de marcas I.E.S. Gran Capitán <br> ©: Juan José Gil Luna, Todos los derechos reservados </br> Córdoba, España. 2020</h5>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Córdoba Patrimonio</title>
+		<meta charset="utf-8">
+		<link rel="icon" type="images/png" href="images/favicon.png" sizes="16x16">
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<link rel="stylesheet" type="text/css" href="css/carrusel.css">
+		
+		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+		<script>
+		var current = 0;
+		var imagenes = new Array();
+		 
+		$(document).ready(function() {
+			var numImages = 3;
+		 
+			$('.left-arrow').on('click',function() {
+				if (current > 0) {
+					current = current - 1;
+				} else {
+					current = numImages - 1;
+				}
+		 
+				$(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
+		 
+				return false;
+			});
+		 
+			$('.left-arrow').on('hover', function() {
+				$(this).css('opacity','0.5');
+			}, function() {
+				$(this).css('opacity','1');
+			});
+		 
+			$('.right-arrow').on('hover', function() {
+				$(this).css('opacity','0.5');
+			}, function() {
+				$(this).css('opacity','1');
+			});
+		 
+			$('.right-arrow').on('click', function() {
+				if (numImages > current + 1) {
+					current = current+1;
+				} else {
+					current = 0;
+				}
+		 
+				$(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
+		 
+				return false;
+			}); 
+		 });
+		</script>
+	</head>
+	
+	<body>
+		<header>
+			<h1>La Mezquita-Catedral</h1>
+		</header>
+		
+		<nav>
+			<strong><a href="lista_monumentos.html">MONUMENTOS</a></strong>
+			<strong><a href="index.html">HISTORIA</a></strong>
+			<strong><a href="festividades.html">FESTIVIDADES</a></strong>
+		</nav>
+		<br>
+		<nav>
+			<strong><a href="tendillas.html">PLAZA DE LAS TENDILLAS</a></strong>
+			<strong><a href="templo_romano.html">TEMPLO ROMANO</a></strong>
+			<strong><a href="caballerizas.html">CABALLERIZAS REALES</a></strong>
+		</nav>
+		<nav>
+			<strong><a href="puente_romano.html">PUENTE ROMANO</a></strong>
+			<strong><a href="calahorra.html">TORRE DE LA CALAHORRA</a></strong>
+			<strong><a href="arco_del_triunfo.html">PUERTA DEL PUENTE</a></strong>
+		</nav>
+		<nav>
+			<strong><a href="arbolafia.html">MOLINO DE LA ALBOLAFIA</a></strong>
+			<strong><a href="mezquita.html">LA MEZQUITA-CATDERAL</a></strong>
+			<strong><a href="alcazar.html">ALCÁZAR DE LOS REYES CRISTIANOS</a></strong>
+		</nav>
+		
+		<main>
+			<a href="index.html">Volver a Inicio</a>
+			<section>
+				<div id="carrusel">
+					<a href="#" class="left-arrow"><img id="arrow" src="images/left_arrow.png" /></a>
+					<a href="#" class="right-arrow"><img id="arrow" src="images/rigth_arrow.png" /></a>
+					<div class="carrusel">
+						<div class="product" id="product_0">
+							<img src="images/mezquita1.jpg" width="100%" height="100%" />
+						</div>
+						<div class="product" id="product_1">
+							<img src="images/mezquita2.jpg" width="100%" height="100%" />
+						</div>
+						<div class="product" id="product_2">
+							<img src="images/mezquita3.jpg" width="100%" height="100%" />
+						</div>
+						<div class="product" id="product_3">
+							<img src="images/mezquita4.jpg" width="100%" height="100%" />
+						</div>
+						<div class="product" id="product_4">
+							<img src="images/mezquita5.jpg" width="100%" height="100%" />
+						</div>
+						<div class="product" id="product_5">
+							<img src="images/mezquita6.jpg" width="100%" height="100%" />
+						</div>
+						<div class="product" id="product_6">
+							<img src="images/mezquita7.jpg" width="100%" height="100%" />
+						</div>
+						<div class="product" id="product_7">
+							<img src="images/mezquita8.jpg" width="100%" height="100%" />
+						</div>
+						<div class="product" id="product_8">
+							<img src="images/mezquita9.jpg" width="100%" height="100%" />
+						</div>
+						<div class="product" id="product_9">
+							<img src="images/mezquita10.jpg" width="100%" height="100%" />
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="Descripcion">
+				<p>Se empezó a construir  como mezquita en el año 786. El edificio que consta con 23.400 metros cuadrados
+				fue la segunda mezquita más grande del mundo en superficie, por detrás de la Mezquita de La Meca, siendo superada posteriormente
+				por la Mezquita Azul (Estambul, 1588). El muro de qibla está orientado 51º grados al sur con respecto a La Meca, algo habitual
+				en las mezquitas de al-Ándalus. En 1238, tras la Reconquista cristiana, se llevó a cabo su consagración como 
+				catedrál de la diócesis con la Ordenación episcopal de su primer obispo.</p>
+				
+				<p>Conocida actualmente como la Catedral de la Asunción de Nuestra Señora de forma eclesiástica, es un edificio
+				con la catedral cristiana en el centro del complejo, rodeada de la mezquita, consta de diferentes partes como son la Capilla Mayor, el Coro,
+				el Trasaltar, el Trascoro y distinto arcos cristianos y moriscos, además de distintas capillas adosadas a sus muros. También podremos visitar
+				las tumbas de distintos miembros de la realeza como Fernando IV de Castilla, Leopoldo de Austria, Alfonso XI de Castilla, etc.</p>
+				
+				<p>El complejo también cuenta con distintas estructuras exteriores, puertas de renombre como la Puerta de San Miguel o Puerta de los Deanes, la Fuente de Santa Catalina,
+				el Arca del Agua, la Virgen de los Faroles, distintos balcones y su irreemplazable Patio de los Naranjos.</p>
+			</section>
+		</main>
+		
+		<footer>
+			<h5>Lenguaje de marcas I.E.S. Gran Capitán <br> ©: Juan José Gil Luna, Todos los derechos reservados </br> Córdoba, España. 2020</h5>
+		</footer>
+	</body>
+</html>

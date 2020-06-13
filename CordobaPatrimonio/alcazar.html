@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Córdoba Patrimonio</title>
+		<meta charset="utf-8">
+		<link rel="icon" type="images/png" href="images/favicon.png" sizes="16x16">
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<link rel="stylesheet" type="text/css" href="css/carrusel.css">
+		
+		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+		<script>
+		var current = 0;
+		var imagenes = new Array();
+		 
+		$(document).ready(function() {
+			var numImages = 3;
+		 
+			$('.left-arrow').on('click',function() {
+				if (current > 0) {
+					current = current - 1;
+				} else {
+					current = numImages - 1;
+				}
+		 
+				$(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
+		 
+				return false;
+			});
+		 
+			$('.left-arrow').on('hover', function() {
+				$(this).css('opacity','0.5');
+			}, function() {
+				$(this).css('opacity','1');
+			});
+		 
+			$('.right-arrow').on('hover', function() {
+				$(this).css('opacity','0.5');
+			}, function() {
+				$(this).css('opacity','1');
+			});
+		 
+			$('.right-arrow').on('click', function() {
+				if (numImages > current + 1) {
+					current = current+1;
+				} else {
+					current = 0;
+				}
+		 
+				$(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
+		 
+				return false;
+			}); 
+		 });
+		</script>
+	</head>
+	
+	<body>
+		<header>
+			<h1>Alcázar de los Reyes Cristianos</h1>
+		</header>
+		
+		<nav>
+			<strong><a href="lista_monumentos.html">MONUMENTOS</a></strong>
+			<strong><a href="index.html">HISTORIA</a></strong>
+			<strong><a href="festividades.html">FESTIVIDADES</a></strong>
+		</nav>
+		<br>
+		<nav>
+			<strong><a href="tendillas.html">PLAZA DE LAS TENDILLAS</a></strong>
+			<strong><a href="templo_romano.html">TEMPLO ROMANO</a></strong>
+			<strong><a href="caballerizas.html">CABALLERIZAS REALES</a></strong>
+		</nav>
+		<nav>
+			<strong><a href="puente_romano.html">PUENTE ROMANO</a></strong>
+			<strong><a href="calahorra.html">TORRE DE LA CALAHORRA</a></strong>
+			<strong><a href="arco_del_triunfo.html">PUERTA DEL PUENTE</a></strong>
+		</nav>
+		<nav>
+			<strong><a href="arbolafia.html">MOLINO DE LA ALBOLAFIA</a></strong>
+			<strong><a href="mezquita.html">LA MEZQUITA-CATDERAL</a></strong>
+			<strong><a href="alcazar.html">ALCÁZAR DE LOS REYES CRISTIANOS</a></strong>
+		</nav>
+		
+		<main>
+			<a href="index.html">Volver a Inicio</a>
+			<section>
+				<div id="carrusel">
+					<a href="#" class="left-arrow"><img id="arrow" src="images/left_arrow.png" /></a>
+					<a href="#" class="right-arrow"><img id="arrow" src="images/rigth_arrow.png" /></a>
+					<div class="carrusel">
+						<div class="product" id="product_0">
+							<img src="images/alcazar1.jpg" width="100%" height="100%" />
+						</div>
+						<div class="product" id="product_1">
+							<img src="images/alcazar2.jpg" width="100%" height="100%" />
+						</div>
+						<div class="product" id="product_2">
+							<img src="images/alcazar3.jpg" width="100%" height="100%" />
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="Descripcion">
+				<p>Es un edificio de carácter militar, ubicado al margen del río Guadalquivir cerca a la Mezquita-Catedral.
+				Se construyó por orden del monarca Alfonso XI de Castilla en el año 1328, sobre el antiguo Alcázar andalusí,
+				antes residencia del gobernador romano y la aduana.</p>
+				
+				<p>Cuatro torres hacen que el edificio tenga una forma casi cuadrada, la torre del Homenaje, la torre de Los Leones,
+				la torre de la Inquisición y la torre de la Paloma, siendo la primera de planta octogonal, la tercera de planta circular
+				y las dos restantes de planta cuadrada. También cuenta con diferentes patios en su interior como el Patio morisco y el
+				Patio de las mujeres, y en su exterior una diversidad de jardines, Jardín Alto, Jardín Medio, Jardín Bajo y el Paseo de los Reyes.
+				En cada uno de ellos encontramos diferentes plantaciones como naranjos, limones, setos, etc. En el Jardín Alto, situado entre la torre
+				de los Leones y la fachada oriental de las Caballerizas Reales, muy cerca del pasadizo que une ambas construcciones, y
+				fue configurado a mediados del siglo XX.</p>
+			</section>
+		</main>
+		
+		<footer>
+			<h5>Lenguaje de marcas I.E.S. Gran Capitán <br> ©: Juan José Gil Luna, Todos los derechos reservados </br> Córdoba, España. 2020</h5>
+		</footer>
+	</body>
+</html>
